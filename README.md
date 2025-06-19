@@ -1,19 +1,26 @@
-# 🤖 AutoGen - LLM ArXiv Paper Scraper (Multi-Agent AI)
+# 🤖 AutoGen Multi-Agent Group Chat for LLM Paper Scraping
 
-This project demonstrates a multi-agent AI workflow using [Microsoft AutoGen](https://github.com/microsoft/autogen).  
-The goal is to scrape **LLM-related papers** from [arXiv.org](https://arxiv.org) from the last 7 days and output a clean **markdown table** categorized by domain.
+This project implements a multi-agent AI workflow using [Microsoft AutoGen](https://github.com/microsoft/autogen). It scrapes recent **arXiv papers related to LLM (Large Language Model) applications** and generates a **markdown table** categorized by domain.
+
+Agents in this project include:
+- 🧠 **Planner**: Breaks down tasks
+- 👷 **Engineer**: Writes scraping and formatting code
+- 🧪 **Scientist**: Categorizes papers by domain
+- 🤖 **Executor**: Executes code automatically
+- 👤 **Admin**: You (initiates the chat)
+
+---
+
+## 🚀 Features
+
+- Multi-agent collaboration via AutoGen
+- Scrapes arXiv for recent LLM-related papers
+- Extracts: Title, Authors, Summary, Link
+- Outputs a structured Markdown table categorized by domain
+- Supports Windows `.bat` for easy execution
 
 ---
 
-## 📌 Features
-
-- ✅ Multi-agent chat system (Planner, Engineer, Scientist, Executor, Admin)
-- ✅ Scrapes arXiv for recent LLM-related papers
-- ✅ Extracts: Title, Authors, Summary, Link
-- ✅ Outputs results as a structured Markdown table
-- ✅ Modular and runs on Windows via `.bat` script
-
----
 
 ## 📂 Project Structure
 ```
@@ -36,8 +43,8 @@ autogen-arxiv/
 ### 1. Clone or download this repo
 
 ```bash
-git clone https://github.com/yourname/autogen-arxiv.git
-cd autogen-arxiv
+git clone https://github.com/SandeshGitHub2077/autogen_multiagent_groupChat.git
+cd autogen_multiagent_groupChat
 ```
 
 ### 2. Create a Conda environment
@@ -59,7 +66,7 @@ OPENAI_API_KEY=your-openai-api-key-here
 
 ### 5. Run the project
 ```bash
-python main.py
+jupyter notebook main.ipynb
 ```
 Or double-click:
 
