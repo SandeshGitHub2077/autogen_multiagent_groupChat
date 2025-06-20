@@ -9,6 +9,17 @@ Agents in this project include:
 - 🤖 **Executor**: Executes code automatically
 - 👤 **Admin**: You (initiates the chat)
 
+### 🧠 Future Scope
+You can extend this project with additional agents, such as a **Critic**:
+
+```python
+critic = autogen.AssistantAgent(
+    name="Critic",
+    system_message="Critic. Double check plan, claims, code from other agents and provide feedback. Check whether the plan includes adding verifiable info such as source URL.",
+    llm_config=gpt4_config,
+)
+# Acts as a reviewer that validates other agents' outputs and enhances reliability
+```
 ---
 
 ## 🚀 Features
